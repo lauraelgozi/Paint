@@ -1,0 +1,109 @@
+.canvas {
+    position: relative;
+    border: 5px solid black;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.palet {
+    width : 500px;
+    height: 60px;
+    background-color:lightgrey;
+    border: 5px solid black;
+    position : relative;
+}
+.red {
+    border-radius: 30%;
+    display : inline-block;
+    background-color: red;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.black { 
+    display : inline-block;
+    border-radius: 30%;
+    background-color: black;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.pink { 
+    display : inline-block;
+    border-radius: 30%;
+    background-color: rgb(245, 71, 158);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.yellow{ 
+    display : inline-block;
+    border-radius: 30%;
+    background-color: yellow;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.green{ 
+    display : inline-block;
+    border-radius: 30%;
+    background-color: rgba(23, 212, 16, 0.904);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.cyan {
+    display : inline-block;
+    border-radius: 30%;
+    background-color: cyan;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+
+.rubber{
+    height: 30px;
+    width: 30px;
+    position : absolute;
+    top: 12px;
+    right: 30px;
+}
+.minus{
+    height: 23px;
+    width: 23px;
+    position : absolute;
+    top: 20px;
+    right: 175px;
+}
+.plus{
+    height: 42px;
+    width: 42px;
+    position : absolute;
+    top: 5px;
+    right: 135px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    position : absolute;
+    top: 36px;
+    right: 80px;
+}
+.square{
+    background-color: black;
+    height: 13px;
+    width: 13px;
+    position : absolute;
+    top: 36px;
+    right: 100px;
+}
+
+.pen {
+    height: 30px;
+    width: 37px;
+    position : absolute;
+    top: 2px;
+    right: 80px;
+}
