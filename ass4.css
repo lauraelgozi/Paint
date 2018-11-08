@@ -13,23 +13,62 @@
     position : relative;
 }
 .red {
+    position : absolute;
+    top: 25px;
+    left: 95px;
     border-radius: 30%;
-    display : inline-block;
     background-color: red;
     height: 20px;
     width: 30px;
     margin : 8px;
 }
+.orange{
+    border-radius: 30%;
+    position : absolute;
+    top: 25px;
+    left: 5px;
+    background-color:orange;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+
 .black { 
-    display : inline-block;
+    position : absolute;
+    bottom: 25px;
+    left: 5px;
     border-radius: 30%;
     background-color: black;
     height: 20px;
     width: 30px;
     margin : 8px;
 }
+.blue{
+    border-radius: 30%;
+    position : absolute;
+    top: 25px;
+    left: 50px;
+    background-color: rgba(0, 60, 255, 0.911);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+
+}
+.cyan {
+    border-radius: 30%;
+    position : absolute;
+    bottom: 25px;
+    left: 50px;
+    border-radius: 30%;
+    background-color: cyan;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
 .pink { 
-    display : inline-block;
+    position : absolute;
+    bottom: 25px;
+    left: 140px;
     border-radius: 30%;
     background-color: rgb(245, 71, 158);
     height: 20px;
@@ -37,25 +76,42 @@
     margin : 8px;
 }
 .yellow{ 
-    display : inline-block;
+    position : absolute;
+    top: 25px;
+    left: 140px;
     border-radius: 30%;
     background-color: yellow;
     height: 20px;
     width: 30px;
     margin : 8px;
 }
+
 .green{ 
-    display : inline-block;
+    position : absolute;
+    bottom: 25px;
+    left: 95px;
     border-radius: 30%;
     background-color: rgba(23, 212, 16, 0.904);
     height: 20px;
     width: 30px;
     margin : 8px;
 }
-.cyan {
-    display : inline-block;
+.purple{
+    position : absolute;
+    bottom: 25px;
+    left: 185px;
     border-radius: 30%;
-    background-color: cyan;
+    background-color: rgb(116, 9, 116);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.brown{
+    position : absolute;
+    top: 25px;
+    left: 185px;
+    border-radius: 30%;
+    background-color: rgba(153, 42, 42, 0.678);
     height: 20px;
     width: 30px;
     margin : 8px;
@@ -65,22 +121,22 @@
     height: 30px;
     width: 30px;
     position : absolute;
-    top: 12px;
+    top: 17px;
     right: 30px;
 }
 .minus{
     height: 23px;
     width: 23px;
     position : absolute;
-    top: 20px;
-    right: 175px;
+    bottom: 4px;
+    right: 205px;
 }
 .plus{
-    height: 42px;
-    width: 42px;
+    height: 49px;
+    width: 49px;
     position : absolute;
-    top: 5px;
-    right: 135px;
+    top: 0px;
+    right: 170px;
 }
 .circle{
     border-radius: 50%;
@@ -89,7 +145,7 @@
     width: 15px;
     position : absolute;
     top: 36px;
-    right: 80px;
+    right: 85px;
 }
 .square{
     background-color: black;
@@ -97,7 +153,16 @@
     width: 13px;
     position : absolute;
     top: 36px;
-    right: 100px;
+    right: 110px;
+}
+.lemon{
+    border-radius: 5px 250px;
+    background-color: black;
+    height: 13px;
+    width: 13px;
+    position : absolute;
+    top: 36px;
+    right: 135px;
 }
 
 .pen {
@@ -105,5 +170,5 @@
     width: 37px;
     position : absolute;
     top: 2px;
-    right: 80px;
+    right: 90px;
 }

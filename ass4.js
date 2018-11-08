@@ -2,9 +2,9 @@
  * ************************* Defining variables ***********************************
  */
 var brushProps = {
-    color : "black",
-    size : 6,
-    borderRadius : 0
+    color: "black",
+    size: 6,
+    borderRadius: 0
 }
 
 /**
@@ -25,13 +25,18 @@ myPalet.appendChild(black);
 
 var red = document.createElement("span");
 red.className = "red";
-red.id = "red"
+red.id = "red";
 myPalet.appendChild(red);
 
 var green = document.createElement("span");
 green.className = "green";
 green.id = "green";
 myPalet.appendChild(green);
+
+var blue = document.createElement("span");
+blue.className = "blue";
+blue.id = "blue";
+myPalet.appendChild(blue);
 
 var pink = document.createElement("span");
 pink.className = "pink";
@@ -45,11 +50,26 @@ myPalet.appendChild(cyan);
 
 var yellow = document.createElement("span");
 yellow.className = "yellow";
-yellow.id = "yellow"
+yellow.id = "yellow";
 myPalet.appendChild(yellow);
 
+var orange = document.createElement("span");
+orange.className = "orange";
+orange.id = "orange";
+myPalet.appendChild(orange);
+
+var purple = document.createElement("span");
+purple.className = "purple";
+purple.id = "purple";
+myPalet.appendChild(purple);
+
+var brown = document.createElement("span");
+brown.className = "brown";
+brown.id = "brown";
+myPalet.appendChild(brown);
+
 var rubber = document.createElement("img");
-rubber.setAttribute("src", "https://cdn.icon-icons.com/icons2/474/PNG/512/eraser_46865.png");
+rubber.setAttribute("src", "https://cdn.icon-icons.com/icons2/906/PNG/512/eraser_icon-icons.com_70168.png");
 myPalet.appendChild(rubber);
 rubber.className = "rubber";
 rubber.id = "rubber";
@@ -74,13 +94,18 @@ pen.id = "pen";
 
 var circle = document.createElement("div");
 myPalet.appendChild(circle);
-circle.className ="circle";
-circle.id ="circle";
+circle.className = "circle";
+circle.id = "circle";
 
-var square =document.createElement("div");
+var square = document.createElement("div");
 myPalet.appendChild(square);
-square.className="square";
-square.id="square";
+square.className = "square";
+square.id = "square";
+
+var lemon = document.createElement("div");
+myPalet.appendChild(lemon);
+lemon.className = "lemon";
+lemon.id = "lemon";
 
 
 /**
@@ -107,13 +132,22 @@ changeColor = function (e) {
     else if (e.target.id == "cyan") {
         brushProps.color = "cyan";
     }
+    else if (e.target.id == "orange") {
+        brushProps.color = "orange";
+    }
+    else if (e.target.id == "blue") {
+        brushProps.color = "rgba(0, 60, 255, 0.911)";
+    }
+    else if (e.target.id == "purple") {
+        brushProps.color = "rgb(116, 9, 116)";
+    }
+    else if (e.target.id == "brown") {
+        brushProps.color = "rgba(153, 42, 42, 0.678)";
+    }
     else if (e.target.id == "rubber") {
         brushProps.color = "white";
     }
-    else if (e.target.id == "rubberBig"){
-        brushProps.color ="white";
-        //point.style.fontSize = 10 + "px";
-    }
+
 }
 
 // Change the format of the buttons
@@ -138,48 +172,57 @@ sizeMinus = function (e) {
     }
 }
 // change the shape of the pen
-changeShape = function(e){
-    if(e.target.id=="circle"){
-        brushProps.borderRadius = "30"
+changeShape = function (e) {
+    if (e.target.id == "circle") {
+        brushProps.borderRadius = "30px";
     }
-    if(e.target.id=="square"){
-        brushProps.borderRadius = "0"
+    else if (e.target.id == "square") {
+        brushProps.borderRadius = "0px";
+    }
+    else if (e.target.id == "lemon") {
+        brushProps.borderRadius = "5px 250px";
     }
 }
 
-    // Add a new div with color to the canvas
-    draw = function () {
-        document.getElementsByClassName("canvas")[0].addEventListener("mousemove", event => {
-            if (event.buttons == 1) {
-                var x = event.clientX;
-                var y = event.clientY;
-                var point = document.createElement("div");
-                point.className = "point";
-                point.style.left = x + "px";
-                point.style.top = y + "px";
-                point.style.position = "absolute";
-                point.style.backgroundColor = brushProps.color;
-                point.style.borderRadius = brushProps.borderRadius + "px";
-                point.style.width = brushProps.size + "px";
-                point.style.height = brushProps.size + "px";
-                canvas.appendChild(point);
-            }
-        });
 
-    }
-    /**
-     * ************************* Add event listeners ***********************************
-     */
+// Add a new div with color to the canvas
+draw = function () {
+    document.getElementsByClassName("canvas")[0].addEventListener("mousemove", event => {
+        if (event.buttons == 1) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var point = document.createElement("div");
+            point.className = "point";
+            point.style.left = x + "px";
+            point.style.top = y + "px";
+            point.style.position = "absolute";
+            point.style.backgroundColor = brushProps.color;
+            point.style.borderRadius = brushProps.borderRadius;
+            point.style.width = brushProps.size + "px";
+            point.style.height = brushProps.size + "px";
+            canvas.appendChild(point);
+        }
+    });
 
-    draw();
-    black.addEventListener("click", changeColor);
-    red.addEventListener("click", changeColor);
-    green.addEventListener("click", changeColor);
-    pink.addEventListener("click", changeColor);
-    yellow.addEventListener("click", changeColor);
-    cyan.addEventListener("click", changeColor);
-    rubber.addEventListener("click", changeColor);
-    plus.addEventListener("click", sizePlus);
-    minus.addEventListener("click", sizeMinus);
-    circle.addEventListener("click",changeShape);
-    square.addEventListener("click",changeShape)
+}
+/**
+ * ************************* Add event listeners ***********************************
+ */
+
+draw();
+black.addEventListener("click", changeColor);
+red.addEventListener("click", changeColor);
+green.addEventListener("click", changeColor);
+pink.addEventListener("click", changeColor);
+yellow.addEventListener("click", changeColor);
+cyan.addEventListener("click", changeColor);
+orange.addEventListener("click", changeColor);
+purple.addEventListener("click", changeColor);
+blue.addEventListener("click", changeColor);
+brown.addEventListener("click", changeColor);
+rubber.addEventListener("click", changeColor);
+plus.addEventListener("click", sizePlus);
+minus.addEventListener("click", sizeMinus);
+circle.addEventListener("click", changeShape);
+square.addEventListener("click", changeShape);
+lemon.addEventListener("click", changeShape);
