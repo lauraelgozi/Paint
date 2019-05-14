@@ -179,15 +179,3 @@
     top: 2px;
     right: 110px;
 }
-.rotate {
-    height: 30px;
-    width: 37px;
-    position : absolute;
-    top: 2px;
-    right: 150px;
-    border-radius: 30%;
-    background-color: rgb(41, 6, 23);
-    height: 20px;
-    width: 30px;
-
-}
