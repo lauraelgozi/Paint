@@ -1,0 +1,193 @@
+.canvas {
+    position: relative;
+    border: 5px solid black;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+.palet {
+    width : 600px;
+    height: 60px;
+    background-color:lightgrey;
+    border: 5px solid black;
+    position : relative;
+}
+.red {
+    position : absolute;
+    top: 25px;
+    left: 95px;
+    border-radius: 30%;
+    background-color: red;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.orange{
+    border-radius: 30%;
+    position : absolute;
+    top: 25px;
+    left: 5px;
+    background-color:orange;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+
+.black { 
+    position : absolute;
+    bottom: 25px;
+    left: 5px;
+    border-radius: 30%;
+    background-color: black;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.blue{
+    border-radius: 30%;
+    position : absolute;
+    top: 25px;
+    left: 50px;
+    background-color: rgba(0, 60, 255, 0.911);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+
+}
+.cyan {
+    border-radius: 30%;
+    position : absolute;
+    bottom: 25px;
+    left: 50px;
+    border-radius: 30%;
+    background-color: cyan;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.pink { 
+    position : absolute;
+    bottom: 25px;
+    left: 140px;
+    border-radius: 30%;
+    background-color: rgb(245, 71, 158);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.yellow{ 
+    position : absolute;
+    top: 25px;
+    left: 140px;
+    border-radius: 30%;
+    background-color: yellow;
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+
+.green{ 
+    position : absolute;
+    bottom: 25px;
+    left: 95px;
+    border-radius: 30%;
+    background-color: rgba(23, 212, 16, 0.904);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.purple{
+    position : absolute;
+    bottom: 25px;
+    left: 185px;
+    border-radius: 30%;
+    background-color: rgb(116, 9, 116);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+.brown{
+    position : absolute;
+    top: 25px;
+    left: 185px;
+    border-radius: 30%;
+    background-color: rgba(153, 42, 42, 0.678);
+    height: 20px;
+    width: 30px;
+    margin : 8px;
+}
+
+.rubber{
+    height: 30px;
+    width: 30px;
+    position : absolute;
+    top: 17px;
+    right: 15px;
+}
+.clearScreen{
+    height: 25px;
+    width: 30px;
+    position : absolute;
+    top: 17px;
+    right:60px;
+}
+.minus{
+    height: 23px;
+    width: 23px;
+    position : absolute;
+    bottom: 4px;
+    right: 225px;
+}
+.plus{
+    height: 49px;
+    width: 49px;
+    position : absolute;
+    top: 0px;
+    right: 200px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    position : absolute;
+    top: 36px;
+    right: 100px;
+}
+.square{
+    background-color: black;
+    height: 13px;
+    width: 13px;
+    position : absolute;
+    top: 36px;
+    right: 130px;
+}
+.lemon{
+    border-radius: 5px 250px;
+    background-color: black;
+    height: 13px;
+    width: 13px;
+    position : absolute;
+    top: 36px;
+    right: 150px;
+}
+
+.pen {
+    height: 30px;
+    width: 37px;
+    position : absolute;
+    top: 2px;
+    right: 110px;
+}
+.rotate {
+    height: 30px;
+    width: 37px;
+    position : absolute;
+    top: 2px;
+    right: 150px;
+    border-radius: 30%;
+    background-color: rgb(41, 6, 23);
+    height: 20px;
+    width: 30px;
+
+}
